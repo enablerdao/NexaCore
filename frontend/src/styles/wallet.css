@@ -1,0 +1,532 @@
+/* Wallet Component Styles */
+
+.wallet-container {
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.wallet-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.wallet-selector {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.wallet-selector select {
+  min-width: 250px;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius-md);
+  background-color: var(--white);
+  font-weight: var(--font-weight-medium);
+}
+
+.wallet-actions {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.wallet-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.wallet-balance {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.balance-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.balance-card.total {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.balance-card.total h3 {
+  color: var(--white);
+  margin-bottom: var(--spacing-md);
+}
+
+.balance-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-md);
+}
+
+.balance-amount {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+}
+
+.balance-amount .amount {
+  font-size: var(--font-size-xxl);
+  font-weight: var(--font-weight-bold);
+}
+
+.balance-amount .currency {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+.balance-card.total .balance-amount .currency {
+  color: var(--white);
+  opacity: 0.8;
+}
+
+.wallet-address {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.address-container {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex: 1;
+}
+
+.address-label {
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+.address-value {
+  font-family: monospace;
+  background-color: var(--bg-primary);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 300px;
+}
+
+.qr-code {
+  background-color: var(--white);
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+}
+
+.qr-code img {
+  width: 100px;
+  height: 100px;
+}
+
+.wallet-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl) 0;
+  text-align: center;
+}
+
+.wallet-empty .material-icons {
+  font-size: 4rem;
+  color: var(--light-gray);
+  margin-bottom: var(--spacing-md);
+}
+
+.wallet-empty h3 {
+  margin-bottom: var(--spacing-sm);
+}
+
+.wallet-empty p {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Transaction List */
+.transaction-list {
+  margin-top: var(--spacing-lg);
+}
+
+.transaction-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.transaction-list-header h3 {
+  margin-bottom: 0;
+}
+
+.transaction-filters {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.transaction {
+  border-bottom: 1px solid var(--lighter-gray);
+}
+
+.transaction-link {
+  display: flex;
+  align-items: center;
+  padding: var(--spacing-md);
+  color: var(--text-primary);
+  transition: background-color var(--transition-fast);
+}
+
+.transaction-link:hover {
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.transaction-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--bg-secondary);
+  margin-right: var(--spacing-md);
+}
+
+.transaction-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-primary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xs);
+}
+
+.transaction-type {
+  font-weight: var(--font-weight-medium);
+}
+
+.transaction-amount {
+  font-weight: var(--font-weight-bold);
+}
+
+.transaction-amount.amount-positive {
+  color: var(--success-color);
+}
+
+.transaction-amount.amount-negative {
+  color: var(--danger-color);
+}
+
+.transaction-secondary {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.transaction-status {
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: var(--font-size-xs);
+  text-transform: uppercase;
+}
+
+.transaction-status.status-confirmed {
+  background-color: var(--success-light);
+  color: var(--success-color);
+}
+
+.transaction-status.status-pending {
+  background-color: var(--warning-light);
+  color: var(--warning-color);
+}
+
+.transaction-status.status-failed {
+  background-color: var(--danger-light);
+  color: var(--danger-color);
+}
+
+/* Transaction Details */
+.transaction-detailed {
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.transaction-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.transaction-icon-large {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--border-radius-circle);
+  background-color: var(--bg-secondary);
+  margin-right: var(--spacing-md);
+}
+
+.transaction-icon-large .material-icons {
+  font-size: 2rem;
+}
+
+.transaction-title {
+  flex: 1;
+}
+
+.transaction-title h2 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.transaction-amount-large {
+  text-align: right;
+}
+
+.transaction-amount-large .amount-positive,
+.transaction-amount-large .amount-negative {
+  display: block;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-xs);
+}
+
+.transaction-fee {
+  display: block;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.transaction-details {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+}
+
+.detail-row {
+  display: flex;
+  margin-bottom: var(--spacing-sm);
+}
+
+.detail-row:last-child {
+  margin-bottom: 0;
+}
+
+.detail-label {
+  width: 150px;
+  font-weight: var(--font-weight-medium);
+  color: var(--text-secondary);
+}
+
+.detail-value {
+  flex: 1;
+}
+
+.detail-value.address,
+.detail-value.hash {
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.transaction-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+}
+
+/* Send Form */
+.send-form {
+  background-color: var(--bg-primary);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-lg);
+}
+
+.send-form-header {
+  margin-bottom: var(--spacing-lg);
+}
+
+.send-form-header h2 {
+  margin-bottom: var(--spacing-xs);
+}
+
+.send-form-header p {
+  color: var(--text-secondary);
+}
+
+.form-row {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.form-col {
+  flex: 1;
+}
+
+.amount-input {
+  position: relative;
+}
+
+.amount-input input {
+  padding-right: 70px;
+}
+
+.currency-label {
+  position: absolute;
+  right: var(--spacing-md);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-secondary);
+  font-weight: var(--font-weight-medium);
+}
+
+.balance-info {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+  margin-top: var(--spacing-xs);
+}
+
+.fee-selector {
+  margin-top: var(--spacing-lg);
+}
+
+.fee-options {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+.fee-option {
+  flex: 1;
+  background-color: var(--bg-secondary);
+  border: 2px solid transparent;
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.fee-option:hover {
+  background-color: var(--lighter-gray);
+}
+
+.fee-option.selected {
+  border-color: var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.fee-option-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+}
+
+.fee-option-title {
+  font-weight: var(--font-weight-medium);
+}
+
+.fee-option-amount {
+  font-weight: var(--font-weight-bold);
+}
+
+.fee-option-time {
+  color: var(--text-secondary);
+  font-size: var(--font-size-sm);
+}
+
+.custom-fee {
+  margin-top: var(--spacing-md);
+}
+
+.transaction-summary {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-sm);
+}
+
+.summary-row:last-child {
+  margin-bottom: 0;
+  padding-top: var(--spacing-sm);
+  border-top: 1px solid var(--light-gray);
+  font-weight: var(--font-weight-bold);
+}
+
+.send-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-lg);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .wallet-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+  
+  .wallet-actions {
+    width: 100%;
+  }
+  
+  .wallet-actions .btn {
+    flex: 1;
+  }
+  
+  .wallet-address {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+  
+  .qr-code {
+    align-self: center;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: var(--spacing-sm);
+  }
+  
+  .fee-options {
+    flex-direction: column;
+  }
+}
