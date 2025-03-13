@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <style>
+    text { font-family: Arial, sans-serif; }
+    .title { font-size: 24px; font-weight: bold; }
+    .subtitle { font-size: 18px; }
+    .label { font-size: 14px; }
+    .small { font-size: 12px; }
+    .component { fill: #00b894; stroke: #2c3e50; stroke-width: 2; opacity: 0.9; }
+    .arrow { fill: none; stroke: #2c3e50; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+    <linearGradient id="componentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00b894" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#00b894" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="100%" height="100%" fill="#f8f9fa" />
+  
+  <text x="400" y="50" text-anchor="middle" class="title">適応型貢献証明 (APoC)</text>
+  
+  <!-- Central Circle -->
+  <circle cx="400" cy="250" r="120" fill="url(#componentGradient)" stroke="#2c3e50" stroke-width="2" />
+  <text x="400" y="240" text-anchor="middle" class="subtitle" fill="#fff">適応型</text>
+  <text x="400" y="270" text-anchor="middle" class="subtitle" fill="#fff">貢献証明</text>
+  
+  <!-- Surrounding Components -->
+  <circle cx="200" cy="150" r="70" fill="#6c5ce7" stroke="#2c3e50" stroke-width="2" opacity="0.8" />
+  <text x="200" y="150" text-anchor="middle" class="label" fill="#fff">ステーキング</text>
+  
+  <circle cx="600" cy="150" r="70" fill="#6c5ce7" stroke="#2c3e50" stroke-width="2" opacity="0.8" />
+  <text x="600" y="150" text-anchor="middle" class="label" fill="#fff">計算貢献</text>
+  
+  <circle cx="200" cy="350" r="70" fill="#6c5ce7" stroke="#2c3e50" stroke-width="2" opacity="0.8" />
+  <text x="200" y="350" text-anchor="middle" class="label" fill="#fff">ネットワーク</text>
+  <text x="200" y="370" text-anchor="middle" class="label" fill="#fff">サポート</text>
+  
+  <circle cx="600" cy="350" r="70" fill="#6c5ce7" stroke="#2c3e50" stroke-width="2" opacity="0.8" />
+  <text x="600" y="350" text-anchor="middle" class="label" fill="#fff">開発</text>
+  <text x="600" y="370" text-anchor="middle" class="label" fill="#fff">貢献</text>
+  
+  <!-- Connecting Arrows -->
+  <line x1="260" y1="180" x2="320" y2="220" class="arrow" />
+  <line x1="540" y1="180" x2="480" y2="220" class="arrow" />
+  <line x1="260" y1="320" x2="320" y2="280" class="arrow" />
+  <line x1="540" y1="320" x2="480" y2="280" class="arrow" />
+  
+  <!-- Key Features -->
+  <rect x="100" y="450" width="600" height="100" rx="10" ry="10" fill="#f1f2f6" stroke="#2c3e50" stroke-width="2" />
+  
+  <text x="200" y="480" text-anchor="middle" class="label">透明性</text>
+  <text x="400" y="480" text-anchor="middle" class="label">公平性</text>
+  <text x="600" y="480" text-anchor="middle" class="label">適応性</text>
+  
+  <text x="200" y="510" text-anchor="middle" class="small">貢献スコアの公開</text>
+  <text x="400" y="510" text-anchor="middle" class="small">多様な貢献の評価</text>
+  <text x="600" y="510" text-anchor="middle" class="small">ネットワーク状態に応じた調整</text>
+  
+  <text x="200" y="530" text-anchor="middle" class="small">監査可能な計算</text>
+  <text x="400" y="530" text-anchor="middle" class="small">スケーラブルな参加</text>
+  <text x="600" y="530" text-anchor="middle" class="small">AIによる最適化</text>
+</svg>
