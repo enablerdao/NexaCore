@@ -1,0 +1,17 @@
+{
+  "name": "nexacore-frontend",
+  "version": "1.0.0",
+  "description": "NexaCore Frontend",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vite": "^4.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.4.0"
+  }
+}
