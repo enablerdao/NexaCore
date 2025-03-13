@@ -1,46 +1,67 @@
 # NexaCore Blockchain
 
-NexaCore is a next-generation blockchain platform with AI integration, sharding, and zk-SNARKs.
+```
+ _   _                  _____               
+| \ | | _____  ____ _  / / __|___  _ __ ___ 
+|  \| |/ _ \ \/ / _` |/ / /  / _ \| '__/ _ \
+| |\  |  __/>  < (_| / / /__| (_) | | |  __/
+|_| \_|\___/_/\_\__,_/_/\____\___/|_|  \___|
+                                            
+```
 
-## Features
+NexaCore は、AI統合、シャーディング、zk-SNARKsを特徴とする次世代ブロックチェーンプラットフォームです。高度なスケーラビリティ、プライバシー保護、AIによる最適化を実現します。
 
-### Hybrid Scalability
-- **Sharding + Layer 0 Approach**: Dynamically splits the network while optimizing communication between different chains at the foundation layer.
-- **Target Performance**: 100,000+ transactions per second.
+## 主な特徴
 
-### Modular Design
-- Customizable functionality for finance, gaming, data storage, and more.
+### ハイブリッドスケーラビリティ
+- **シャーディング + レイヤー0アプローチ**: ネットワークを動的に分割し、基盤層で異なるチェーン間の通信を最適化
+- **目標パフォーマンス**: 100,000+ TPS（1秒あたりのトランザクション数）
 
-### Zero-Knowledge Privacy
-- Built-in zk-SNARKs for transaction privacy while maintaining verifiability.
+### モジュラー設計
+- 金融、ゲーム、データストレージなど、様々な用途に合わせてカスタマイズ可能な機能
 
-### AI-Driven Optimization
-- Real-time load balancing AI optimizes fees and transaction routing.
+### ゼロ知識プライバシー
+- 検証可能性を維持しながらトランザクションのプライバシーを確保するzk-SNARKsを内蔵
 
-### Self-Upgrade Capability
-- Protocol updates without requiring hard forks.
+### AI駆動の最適化
+- リアルタイムの負荷分散AIが手数料とトランザクションルーティングを最適化
 
-## Consensus Algorithm: Adaptive Proof of Contribution (APoC)
+### 自己アップグレード機能
+- ハードフォークを必要とせずにプロトコルを更新可能
 
-APoC combines the benefits of Proof of Stake (PoS) and Proof of Work (PoW) while adding a contribution metric:
+## コンセンサスアルゴリズム: 適応型貢献証明 (APoC)
 
-- **Stake Amount**: Economic commitment to the network (PoS element)
-- **Computational Contribution**: Resource provision (PoW element)
-- **Network Contribution Score**: Rewards for transaction validation, bug reporting, open-source contributions, etc.
+```
+┌───────────────────────────────────────────────────────┐
+│                                                       │
+│  ┌─────────────┐      ┌─────────────┐      ┌─────────────┐  │
+│  │   ステーク   │      │  計算貢献   │      │ ネットワーク │  │
+│  │    (PoS)    │  +   │   (PoW)    │  +   │  貢献スコア  │  │
+│  └─────────────┘      └─────────────┘      └─────────────┘  │
+│                                                       │
+│                 Adaptive Proof of Contribution        │
+└───────────────────────────────────────────────────────┘
+```
 
-This approach maintains the energy efficiency of PoS while preserving the security of PoW and preventing centralization through the contribution score.
+APoCは、Proof of Stake（PoS）とProof of Work（PoW）の利点を組み合わせ、さらに貢献指標を追加したコンセンサスアルゴリズムです：
 
-## Unique Features
+- **ステーク量**: ネットワークへの経済的コミットメント（PoS要素）
+- **計算貢献**: リソース提供（PoW要素）
+- **ネットワーク貢献スコア**: トランザクション検証、バグ報告、オープンソース貢献などに対する報酬
 
-### AI and Blockchain Fusion
-- AI assists with transaction routing and smart contract debugging.
+このアプローチは、PoSのエネルギー効率を維持しながら、PoWのセキュリティを保持し、貢献スコアを通じて中央集権化を防止します。
 
-### Dynamic Governance Model
-- Voting rights depend on stake amount + contribution score.
-- AI analyzes voting patterns to prevent fraudulent voting.
+## ユニークな特徴
 
-### Developer Templates
-- "Plug and Play" modules for easy DApp development.
+### AIとブロックチェーンの融合
+- AIがトランザクションルーティングとスマートコントラクトのデバッグを支援
+
+### 動的ガバナンスモデル
+- 投票権はステーク量と貢献スコアに依存
+- AIが投票パターンを分析し、不正投票を防止
+
+### 開発者テンプレート
+- DApp開発を容易にする「プラグアンドプレイ」モジュール
 
 ## Project Structure
 
@@ -133,9 +154,18 @@ We welcome contributions! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Roadmap
+## ロードマップ
 
-- **Phase 1**: Core implementation with basic sharding
-- **Phase 2**: AI integration and zk-SNARKs implementation
-- **Phase 3**: Cross-chain interoperability
-- **Phase 4**: Advanced features (quantum resistance, metaverse integration, etc.)
+- **フェーズ1**: 基本的なシャーディングを備えたコア実装
+- **フェーズ2**: AI統合とzk-SNARKs実装
+- **フェーズ3**: クロスチェーン相互運用性
+- **フェーズ4**: 高度な機能（量子耐性、メタバース統合など）
+
+## 関連プロジェクト
+
+EnablerDAOが開発する他のブロックチェーンプロジェクトもご覧ください：
+
+- [NovaLedger](https://github.com/enablerdao/NovaLedger) - 超高速処理、高スケーラビリティ、量子耐性、AIによる最適化を特徴とする次世代ブロックチェーン技術
+- [OptimaChain](https://github.com/enablerdao/OptimaChain) - 革新的なスケーリング技術と高度なセキュリティを統合した分散型ブロックチェーンプラットフォーム
+- [NeuraChain](https://github.com/enablerdao/NeuraChain) - AI、量子耐性、スケーラビリティ、完全な分散化、エネルギー効率を統合した次世代ブロックチェーン
+- [PulseChain](https://github.com/enablerdao/PulseChain) - リアルタイム処理、環境融合、人間性を重視した全く新しいレイヤーワンブロックチェーン
